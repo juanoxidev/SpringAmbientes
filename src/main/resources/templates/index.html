@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profile Page</title>
+</head>
+<body>
+    <h1>Bienvenido a la app</h1>
+<!--Con esto puedo obtener el perfil ${@environment.getActiveProfiles()[0]} -->
+<div th:text="${@environment.getActiveProfiles()[0]}">
+</div>
+</body>
+</html>
